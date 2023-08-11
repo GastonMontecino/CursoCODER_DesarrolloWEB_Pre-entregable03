@@ -1,0 +1,113 @@
+//section equipo.html BOOTSTRAP CARDS
+$fuente-principal:'Roboto', sans-serif;
+
+body{
+    .card{
+        margin: 5px;
+    }
+    .h1equipo{
+        text-align: center;
+    }
+    .h2equipo{
+        text-align: center;
+    }
+    .section-derivaciones{
+        .container-regiones{
+            display: flex;
+            justify-content: center;
+            .regiones{
+                width: 50rem;    
+        
+            }
+        }
+    }
+}
+
+//secion prestaciones.html
+
+section{
+        .h1prestaciones{
+            color:#000000;
+            font-size: 40px;
+            font-family:$fuente-principal;
+            margin: 4px;
+        
+        }
+
+        form{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+            grid-template-rows: repeat(8, auto); /* 8 filas */
+            grid-gap: 10px; /* Espacio entre elementos */
+            font-family: $fuente-principal;
+            font-size: 20px;
+            margin: 10px;
+            background-color: #30bef2;
+            border: solid 5px #30bef2;
+            .Nombre{
+                grid-column: 1/2;
+                grid-row:1/2 ;
+            }
+            .Nombrein{
+                grid-column: 1/2;
+                grid-row:2/3 ;
+            }
+            .Institucion{
+                grid-column: 1/2;
+                grid-row:3/4 ;
+            }
+            .Institucionin{
+                grid-column: 1/2;
+                grid-row:4/5 ;
+            }
+            .consulta{
+                grid-column: 1/2;
+                grid-row:5/6 ;
+            }
+            .consultain{
+                grid-column: 1/2;
+                grid-row:6/7 ;
+                padding: 40px;
+            }
+            .email{
+                grid-column: 1/2;
+                grid-row:7/8;
+            }
+            .emailin{
+                grid-column: 1/2;
+                grid-row:8/9 ;
+            }
+        }
+        
+        ul{
+            li{
+                color: black;
+                font-size: 15px;
+                font-family:$fuente-principal;
+                padding: 15px;
+                text-align: center;
+                transition: background-color 0.8s;
+                &:hover {
+                    color: white;
+                    background-color: violet;
+                    border: none;
+                        }
+            .cursiva{
+                font-style: italic;
+            }
+               
+            }
+        }
+        .p-derivaciones{
+            font-size: 14px;
+            font-family: $fuente-principal;
+        }   
+
+        .p-contacto{
+            font-size: 20px;
+            font-family: $fuente-principal;
+            text-align: center;
+        }
+               
+    }
+

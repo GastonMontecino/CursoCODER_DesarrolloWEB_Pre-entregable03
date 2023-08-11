@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-content: center;
+  border-bottom: solid 1px #30bef2;
+}
+header img {
+  width: 20rem;
+  grid-template-columns: 1/2;
+}
+header nav {
+  grid-template-columns: 2/3;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-content: end;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  margin: 3px;
+  border: solid 1px #30bef2;
+  border-radius: 3px;
+  padding: 5px;
+}
+header nav ul li a:hover {
+  color: white;
+  background-color: #30bef2;
+  border: none;
+}
+
+footer {
+  background-color: #30bef2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-family: "Roboto", sans-serif;
+}
+footer img {
+  width: 12rem;
+  justify-self: center;
+  align-self: center;
+}
+footer .texto_footer1 {
+  font-size: 12px;
+}
+footer .texto_footer2 {
+  font-size: 11px;
+}
+footer .texto_footer3 {
+  font-size: 10px;
+}
+footer .texto_footer4 {
+  font-size: 9px;
+}
+
+body .card {
+  margin: 5px;
+}
+body .h1equipo {
+  text-align: center;
+}
+body .h2equipo {
+  text-align: center;
+}
+body .section-derivaciones .container-regiones {
+  display: flex;
+  justify-content: center;
+}
+body .section-derivaciones .container-regiones .regiones {
+  width: 50rem;
+}
+
+section .h1prestaciones {
+  color: #000000;
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  margin: 4px;
+}
+section form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  grid-template-rows: repeat(8, auto); /* 8 filas */
+  grid-gap: 10px; /* Espacio entre elementos */
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin: 10px;
+  background-color: #30bef2;
+  border: solid 5px #30bef2;
+}
+section form .Nombre {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+section form .Nombrein {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+section form .Institucion {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+section form .Institucionin {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+section form .consulta {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+section form .consultain {
+  grid-column: 1/2;
+  grid-row: 6/7;
+  padding: 40px;
+}
+section form .email {
+  grid-column: 1/2;
+  grid-row: 7/8;
+}
+section form .emailin {
+  grid-column: 1/2;
+  grid-row: 8/9;
+}
+section ul li {
+  color: black;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  padding: 15px;
+  text-align: center;
+  transition: background-color 0.8s;
+}
+section ul li:hover {
+  color: white;
+  background-color: violet;
+  border: none;
+}
+section ul li .cursiva {
+  font-style: italic;
+}
+section .p-derivaciones {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+section .p-contacto {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
