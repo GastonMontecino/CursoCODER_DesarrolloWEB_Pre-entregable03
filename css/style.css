@@ -5,156 +5,597 @@
   box-sizing: border-box;
 }
 
-header {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  align-content: center;
-  border-bottom: solid 1px #30bef2;
+@media (min-width: 767px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-content: center;
+    border-bottom: solid 2px #30bef2;
+    padding: 15px;
+  }
+  header .img_header {
+    width: 250px;
+    grid-template-columns: 1/2;
+  }
+  header nav {
+    grid-template-columns: 2/3;
+  }
+  header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5px;
+  }
+  header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    margin: 3px;
+    border: solid 1.5px #30bef2;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  header nav ul li a:hover {
+    color: white;
+    background-color: #30bef2;
+    border: none;
+  }
 }
-header img {
-  width: 20rem;
-  grid-template-columns: 1/2;
+@media (max-width: 767px) {
+  header {
+    border-bottom: solid 2px #30bef2;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header .img_header {
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px;
+  }
+  header nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    margin: 5px;
+    border: solid 1.5px #30bef2;
+    border-radius: 4px;
+    padding: 5px;
+  }
 }
-header nav {
-  grid-template-columns: 2/3;
+@media (min-width: 767px) {
+  footer {
+    background-color: #30bef2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-family: "Roboto", sans-serif;
+    color: #FFFFFF;
+  }
+  footer img {
+    width: 180px;
+    justify-self: center;
+    align-self: center;
+  }
+  footer a {
+    justify-self: center;
+    align-self: center;
+  }
+  footer .texto_footer1 {
+    font-size: 12px;
+    margin: 4px;
+    text-align: center;
+    font-weight: bold;
+  }
+  footer .texto_footer2 {
+    font-size: 11px;
+    margin: 4px;
+    text-align: center;
+  }
+  footer .texto_footer3 {
+    font-size: 10px;
+    margin: 4px;
+    text-align: center;
+  }
+  footer .texto_footer4 {
+    font-size: 9px;
+    margin: 4px;
+    text-align: center;
+  }
 }
-header nav ul {
-  list-style: none;
-  display: flex;
-  align-content: end;
-  justify-content: space-around;
-  margin-top: 20px;
+@media (max-width: 767px) {
+  footer {
+    background-color: #30bef2;
+    display: grid;
+    font-family: "Roboto", sans-serif;
+    color: #FFFFFF;
+  }
+  footer img {
+    width: 180px;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 20px;
+  }
+  footer a {
+    justify-self: center;
+    align-self: center;
+  }
+  footer .texto_footer1 {
+    font-size: 12px;
+    margin: 4px;
+    text-align: center;
+    font-weight: bold;
+  }
+  footer .texto_footer2 {
+    font-size: 11px;
+    margin: 4px;
+    text-align: center;
+  }
+  footer .texto_footer3 {
+    font-size: 10px;
+    margin: 4px;
+    text-align: center;
+  }
+  footer .texto_footer4 {
+    font-size: 9px;
+    margin: 4px;
+    text-align: center;
+  }
 }
-header nav ul li a {
-  color: black;
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  margin: 3px;
-  border: solid 1px #30bef2;
-  border-radius: 3px;
-  padding: 5px;
+@media (min-width: 767px) {
+  body .section_equipo {
+    margin: 10px;
+  }
+  body .section_equipo .card {
+    margin: 5px;
+  }
+  body .section_equipo .h1equipo {
+    text-align: center;
+    margin: 20px;
+  }
+  body .section_equipo .h2equipo {
+    text-align: center;
+    margin: 20px;
+  }
+  body .section-derivaciones .container-regiones {
+    display: flex;
+    justify-content: center;
+  }
+  body .section-derivaciones .container-regiones .regiones {
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  body section #carouselExampleDark .carousel-caption h5 {
+    color: #1a1a1a !important;
+    font-family: "Roboto", sans-serif !important;
+    background-color: rgba(244, 244, 244, 0.6235294118) !important;
+  }
+  body section #carouselExampleDark .carousel-caption p {
+    color: #1a1a1a !important;
+    font-family: "Roboto", sans-serif !important;
+    background-color: rgba(244, 244, 244, 0.6235294118) !important;
+  }
+  body .section-container {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  body .section-container .section_div {
+    margin: 20px;
+    border: 0.5px;
+    border-radius: 5px;
+  }
+  body .section-container .section_div:hover {
+    background-color: #f4f4f4;
+  }
+  body .section-container .section_div:hover .section_div3 p {
+    color: #30bef2;
+  }
+  body .section-container .section_div .section_div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .section-container .section_div .section_div2 .imagen_section {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    width: 300px;
+    border-radius: 5px;
+  }
+  body .section-container .section_div .section_div3 p {
+    color: #1a1a1a;
+    font-size: 12px;
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+    margin: 8px;
+  }
+  body .section-container .section_div .section_div3 .section_p_title {
+    font-size: 15px;
+    color: #1a1a1a;
+    text-align: start;
+    font-weight: bold;
+    margin: 8px;
+  }
+  .banner_bienvenida {
+    background-image: url(../img/banner_bienvenida.png);
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+  }
+  .banner_bienvenida h3 {
+    font-size: 26px;
+    padding: 30px;
+    text-align: start;
+  }
+  .banner_bienvenida .texto_bienvenida {
+    font-size: 14px;
+    padding: 20px;
+    text-align: start;
+    background-color: rgba(244, 244, 244, 0.2196078431);
+  }
+  section .h1prestaciones {
+    color: #FFFFFF;
+    font-size: 35px;
+    font-family: "Roboto", sans-serif;
+    margin: 4px;
+    padding: 15px;
+    background-image: url(../img/banner_web.png);
+  }
+  section form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-template-rows: repeat(8, auto); /* 8 filas */
+    grid-gap: 10px; /* Espacio entre elementos */
+    font-family: "Roboto", sans-serif;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: 22px;
+    background-image: url(../img/fondo_contacto.png);
+    border-radius: 5px;
+  }
+  section form label {
+    margin: 5px;
+    margin-left: 35px;
+  }
+  section form input {
+    margin-left: 35px;
+    border: none;
+    border: solid 0.25px #1a1a1a;
+    border-radius: 3px;
+  }
+  section form .Nombre {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  section form .Nombrein {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  section form .Institucion {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  section form .Institucionin {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  section form .consulta {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  section form .consultain {
+    grid-column: 1/2;
+    grid-row: 6/7;
+    padding: 40px;
+  }
+  section form .email {
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+  section form .emailin {
+    grid-column: 1/2;
+    grid-row: 8/9;
+    margin-bottom: 5px;
+  }
+  section form .logoBM_contacto {
+    position: absolute;
+    width: 175px;
+    left: 850px;
+    top: 440px;
+  }
+  section ul {
+    list-style: none;
+    margin-bottom: 80px;
+  }
+  section ul li {
+    color: black;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    padding: 12px;
+    text-align: center;
+    transition: background-color 0.8s;
+  }
+  section ul li:hover {
+    color: white;
+    background-color: violet;
+    border: none;
+  }
+  section ul li:hover .condiciones_preanaliticas {
+    display: contents;
+  }
+  section ul li .cursiva {
+    font-style: italic;
+  }
+  section ul li .condiciones_preanaliticas {
+    color: #FFFFFF;
+    text-align: end;
+    font-weight: bold;
+    display: none;
+  }
+  section .p-derivaciones {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    margin: 8px;
+    text-align: center;
+  }
+  section .p-derivaciones .p_enlace {
+    text-decoration: none;
+    color: #1a1a1a;
+    margin: 1px;
+    background-color: #f4f4f4;
+  }
+  section .p-derivaciones .p_enlace:hover {
+    color: #FFFFFF;
+    background-color: #30bef2;
+    border-radius: 2px;
+    margin: 1px;
+  }
+  section .p-contacto_2 {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin: 5px;
+    margin-top: 22px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+  }
+  section .h1_contacto {
+    color: #FFFFFF;
+    font-size: 35px;
+    font-family: "Roboto", sans-serif;
+    margin: 4px;
+    padding: 15px;
+    background-color: #30bef2;
+  }
 }
-header nav ul li a:hover {
-  color: white;
-  background-color: #30bef2;
-  border: none;
-}
-
-footer {
-  background-color: #30bef2;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  font-family: "Roboto", sans-serif;
-}
-footer img {
-  width: 12rem;
-  justify-self: center;
-  align-self: center;
-}
-footer .texto_footer1 {
-  font-size: 12px;
-}
-footer .texto_footer2 {
-  font-size: 11px;
-}
-footer .texto_footer3 {
-  font-size: 10px;
-}
-footer .texto_footer4 {
-  font-size: 9px;
-}
-
-body .card {
-  margin: 5px;
-}
-body .h1equipo {
-  text-align: center;
-}
-body .h2equipo {
-  text-align: center;
-}
-body .section-derivaciones .container-regiones {
-  display: flex;
-  justify-content: center;
-}
-body .section-derivaciones .container-regiones .regiones {
-  width: 50rem;
-}
-
-section .h1prestaciones {
-  color: #000000;
-  font-size: 40px;
-  font-family: "Roboto", sans-serif;
-  margin: 4px;
-}
-section form {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-  grid-template-rows: repeat(8, auto); /* 8 filas */
-  grid-gap: 10px; /* Espacio entre elementos */
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  margin: 10px;
-  background-color: #30bef2;
-  border: solid 5px #30bef2;
-}
-section form .Nombre {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-section form .Nombrein {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-section form .Institucion {
-  grid-column: 1/2;
-  grid-row: 3/4;
-}
-section form .Institucionin {
-  grid-column: 1/2;
-  grid-row: 4/5;
-}
-section form .consulta {
-  grid-column: 1/2;
-  grid-row: 5/6;
-}
-section form .consultain {
-  grid-column: 1/2;
-  grid-row: 6/7;
-  padding: 40px;
-}
-section form .email {
-  grid-column: 1/2;
-  grid-row: 7/8;
-}
-section form .emailin {
-  grid-column: 1/2;
-  grid-row: 8/9;
-}
-section ul li {
-  color: black;
-  font-size: 15px;
-  font-family: "Roboto", sans-serif;
-  padding: 15px;
-  text-align: center;
-  transition: background-color 0.8s;
-}
-section ul li:hover {
-  color: white;
-  background-color: violet;
-  border: none;
-}
-section ul li .cursiva {
-  font-style: italic;
-}
-section .p-derivaciones {
-  font-size: 14px;
-  font-family: "Roboto", sans-serif;
-}
-section .p-contacto {
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-  text-align: center;
+@media (max-width: 767px) {
+  body .section_equipo {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .section_equipo .h1equipo {
+    text-align: center;
+    margin: 10px;
+    font-size: 22;
+  }
+  body .section_equipo .h2equipo {
+    text-align: center;
+    margin: 10px;
+    font-size: 18px;
+  }
+  body .section_equipo #cards_query {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+  }
+  body .section_equipo #cards_query .card {
+    margin: 5px;
+  }
+  body .section-derivaciones .container-regiones {
+    display: flex;
+    justify-content: center;
+  }
+  body .section-derivaciones .container-regiones .regiones {
+    width: 600px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  body section #carouselExampleDark .carousel-caption h5 {
+    color: #1a1a1a !important;
+    font-family: "Roboto", sans-serif !important;
+    background-color: rgba(244, 244, 244, 0.6235294118) !important;
+  }
+  body section #carouselExampleDark .carousel-caption p {
+    color: #1a1a1a !important;
+    font-family: "Roboto", sans-serif !important;
+    background-color: rgba(244, 244, 244, 0.6235294118) !important;
+  }
+  body .section-container {
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+  }
+  body .section-container .section_div {
+    margin: 10px;
+    border: 0.5px;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+  }
+  body .section-container .section_div .section_div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .section-container .section_div .section_div2 .imagen_section {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    width: 220px;
+    border-radius: 5px;
+  }
+  body .section-container .section_div .section_div3 p {
+    color: #1a1a1a;
+    font-size: 12px;
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+    margin: 8px;
+  }
+  body .section-container .section_div .section_div3 .section_p_title {
+    font-size: 15px;
+    color: #1a1a1a;
+    text-align: start;
+    font-weight: bold;
+    margin: 8px;
+  }
+  .banner_bienvenida {
+    background-image: url(../img/banner_bienvenida.png);
+    margin-left: 15px;
+    margin-right: 15spx;
+    margin-top: 30px;
+  }
+  .banner_bienvenida h3 {
+    font-size: 22px;
+    padding: 30px;
+    text-align: justify;
+    color: #f4f4f4;
+  }
+  .banner_bienvenida .texto_bienvenida {
+    font-size: 13px;
+    padding: 20px;
+    text-align: justify;
+    background-color: rgba(244, 244, 244, 0.2196078431);
+  }
+  section .h1prestaciones {
+    color: #FFFFFF;
+    font-size: 28px;
+    font-family: "Roboto", sans-serif;
+    margin: 4px;
+    padding: 12px;
+    text-align: center;
+    background-image: url(../img/banner_web.png);
+  }
+  section form {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: 22px;
+    background-image: url(../img/fondo_contacto.png);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  section form label {
+    margin: 5px;
+    margin-left: 0px;
+  }
+  section form input {
+    margin-left: 0px;
+    border: none;
+    border: solid 0.25px #1a1a1a;
+    border-radius: 3px;
+  }
+  section form .Nombrein {
+    padding-left: 200px;
+  }
+  section form .Institucionin {
+    padding-left: 200px;
+  }
+  section form .consultain {
+    padding: 80px;
+  }
+  section form .emailin {
+    padding-left: 200px;
+    margin-bottom: 5px;
+  }
+  section form .logoBM_contacto {
+    display: none;
+  }
+  section ul {
+    list-style: none;
+    margin-bottom: 80px;
+  }
+  section ul li {
+    color: black;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    padding: 12px;
+    text-align: center;
+    transition: background-color 0.8s;
+  }
+  section ul li:hover {
+    color: white;
+    background-color: violet;
+    border: none;
+  }
+  section ul li:hover .condiciones_preanaliticas {
+    display: contents;
+  }
+  section ul li .cursiva {
+    font-style: italic;
+  }
+  section ul li .condiciones_preanaliticas {
+    color: #FFFFFF;
+    text-align: end;
+    font-weight: bold;
+    display: none;
+  }
+  section .p-derivaciones {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    margin: 8px;
+    text-align: center;
+  }
+  section .p-derivaciones .p_enlace {
+    text-decoration: none;
+    color: #1a1a1a;
+    margin: 1px;
+    background-color: #f4f4f4;
+  }
+  section .p-derivaciones .p_enlace:hover {
+    color: #FFFFFF;
+    background-color: #30bef2;
+    border-radius: 2px;
+    margin: 1px;
+  }
+  section .p-contacto_2 {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin: 5px;
+    margin-top: 22px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+  }
+  section .h1_contacto {
+    color: #FFFFFF;
+    font-size: 28px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin: 4px;
+    padding: 15px;
+    background-color: #30bef2;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
