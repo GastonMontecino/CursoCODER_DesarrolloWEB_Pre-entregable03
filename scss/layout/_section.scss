@@ -304,11 +304,13 @@ section{
                         }
 
             #cards_query{
-                display: flex;
-                flex-direction: column;
-                margin: 5px;
-                .card{
-                    margin: 5px;
+                display: flex !important;
+                flex-direction: column !important;
+                margin: 8px !important;
+                   .card{
+                    width: 100% !important;
+                    box-sizing: border-box !important;
+                    margin: 5px !important;
                         }
 
                 }
