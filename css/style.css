@@ -254,66 +254,31 @@
     background-image: url(../img/banner_web.png);
   }
   section form {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    grid-template-rows: repeat(8, auto); /* 8 filas */
-    grid-gap: 10px; /* Espacio entre elementos */
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #f4f4f4;
+    border-radius: 1em;
+  }
+  section form ul li label {
+    display: inline-block;
+    width: 190px;
+    text-align: center;
+  }
+  section form ul li input {
+    font-size: 14px;
     font-family: "Roboto", sans-serif;
-    color: #FFFFFF;
-    font-size: 20px;
-    margin: 22px;
-    background-image: url(../img/fondo_contacto.png);
-    border-radius: 5px;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #f4f4f4;
   }
-  section form label {
-    margin: 5px;
-    margin-left: 35px;
-  }
-  section form input {
-    margin-left: 35px;
-    border: none;
-    border: solid 0.25px #1a1a1a;
-    border-radius: 3px;
-  }
-  section form .Nombre {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  section form .Nombrein {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-  section form .Institucion {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-  section form .Institucionin {
-    grid-column: 1/2;
-    grid-row: 4/5;
-  }
-  section form .consulta {
-    grid-column: 1/2;
-    grid-row: 5/6;
-  }
-  section form .consultain {
-    grid-column: 1/2;
-    grid-row: 6/7;
-    padding: 40px;
-  }
-  section form .email {
-    grid-column: 1/2;
-    grid-row: 7/8;
-  }
-  section form .emailin {
-    grid-column: 1/2;
-    grid-row: 8/9;
-    margin-bottom: 5px;
-  }
-  section form .logoBM_contacto {
-    position: absolute;
-    width: 175px;
-    left: 850px;
-    top: 440px;
+  section form ul li textarea {
+    vertical-align: top;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    height: 6em;
+    width: 300px;
+    border: 1px solid #f4f4f4;
   }
   section ul {
     list-style: none;
@@ -495,26 +460,31 @@
     background-image: url(../img/banner_web.png);
   }
   section form {
-    display: flex;
-    flex-direction: column;
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #f4f4f4;
+    border-radius: 1em;
+  }
+  section form ul li label {
+    display: inline-block;
+    width: 190px;
+    text-align: center;
+  }
+  section form ul li input {
+    font-size: 14px;
     font-family: "Roboto", sans-serif;
-    color: #FFFFFF;
-    font-size: 20px;
-    margin: 22px;
-    background-image: url(../img/fondo_contacto.png);
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #f4f4f4;
   }
-  section form label {
-    margin: 5px;
-    margin-left: 0px;
-  }
-  section form input {
-    margin-left: 0px;
-    border: none;
-    border: solid 0.25px #1a1a1a;
-    border-radius: 3px;
+  section form ul li textarea {
+    vertical-align: top;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    height: 6em;
+    width: 300px;
+    border: 1px solid #f4f4f4;
   }
   section form .Nombrein {
     padding-left: 200px;

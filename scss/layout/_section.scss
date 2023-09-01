@@ -140,68 +140,35 @@ section{
             background-image:url(../img/banner_web.png);
                                 
         }
-
         form{
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-            grid-template-rows: repeat(8, auto); /* 8 filas */
-            grid-gap: 10px; /* Espacio entre elementos */
-            font-family: $fuente-principal;
-            color: #FFFFFF;
-            font-size: 20px;
-            margin: 22px;
-            background-image:url(../img/fondo_contacto.png);
-            border-radius: 5px;
+            margin: 0 auto;
+            width: 400px;
+            padding: 1em;
+            border: 1px solid #f4f4f4;
+            border-radius: 1em;
+            ul{
+                li{
             label{
-                margin: 5px;
-                margin-left: 35px;
-            }
+                display: inline-block;
+                width: 190px;
+                text-align: center;
+                }
             input{
-                margin-left: 35px;
-                border: none;
-                border: solid 0.25px #1a1a1a;
-                border-radius: 3px;
-            }
-            .Nombre{
-                grid-column: 1/2;
-                grid-row:1/2 ;
-            }
-            .Nombrein{
-                grid-column: 1/2;
-                grid-row:2/3 ;
-            }
-            .Institucion{
-                grid-column: 1/2;
-                grid-row:3/4 ;
-            }
-            .Institucionin{
-                grid-column: 1/2;
-                grid-row:4/5 ;
-            }
-            .consulta{
-                grid-column: 1/2;
-                grid-row:5/6 ;
-            }
-            .consultain{
-                grid-column: 1/2;
-                grid-row:6/7 ;
-                padding: 40px;
-            }
-            .email{
-                grid-column: 1/2;
-                grid-row:7/8;
-            }
-            .emailin{
-                grid-column: 1/2;
-                grid-row:8/9 ;
-                margin-bottom: 5px;
-            }
-            .logoBM_contacto{
-                position: absolute;
-                width: 175px;
-                left: 850px;
-                top: 440px;
-
+                font-size: 14px;
+                font-family: $fuente-principal;
+                width: 300px;
+                box-sizing: border-box;
+                border: 1px solid #f4f4f4;
+                    }
+            textarea {
+                vertical-align: top;
+                font-size: 14px;
+                font-family: $fuente-principal;
+                height: 6em;
+                width: 300px;
+                border: 1px solid #f4f4f4;
+                    }
+                }
             }
         }
         
@@ -434,26 +401,34 @@ section{
             }
     
             form{
-                display: flex;
-                flex-direction: column;
-                font-family: $fuente-principal;
-                color: #FFFFFF;
-                font-size: 20px;
-                margin: 22px;
-                background-image:url(../img/fondo_contacto.png);
-                border-radius: 5px;
-                justify-content: center;
-                align-items: center;
+                margin: 0 auto;
+                width: 400px;
+                padding: 1em;
+                border: 1px solid #f4f4f4;
+                border-radius: 1em;
+                ul{
+                    li{
                 label{
-                    margin: 5px;
-                    margin-left: 0px;
-                }
+                    display: inline-block;
+                    width: 190px;
+                    text-align: center;
+                    }
                 input{
-                    margin-left: 0px;
-                    border: none;
-                    border: solid 0.25px #1a1a1a;
-                    border-radius: 3px;
-
+                    font-size: 14px;
+                    font-family: $fuente-principal;
+                    width: 300px;
+                    box-sizing: border-box;
+                    border: 1px solid #f4f4f4;
+                        }
+                textarea {
+                    vertical-align: top;
+                    font-size: 14px;
+                    font-family: $fuente-principal;
+                    height: 6em;
+                    width: 300px;
+                    border: 1px solid #f4f4f4;
+                        }
+                    }
                 }
 
                 .Nombrein{
