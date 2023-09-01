@@ -27,7 +27,7 @@ body{
                 display: flex;
                 justify-content: center;
                     .regiones{
-                        //width: 600px;
+                        width: 750px;
                         margin-bottom: 20px;
                         border-radius: 10px;
                             }
@@ -147,6 +147,7 @@ section{
             border: 1px solid #f4f4f4;
             border-radius: 1em;
             ul{
+                //Tomara valores de list style, fuente, hover, etc, de la siguiente ul//
                 li{
             label{
                 display: inline-block;
@@ -171,7 +172,7 @@ section{
                 }
             }
         }
-        
+      //section prestaciones.html  
         ul{
             list-style: none;
             margin-bottom: 80px;
@@ -287,7 +288,7 @@ section{
                     display: flex;
                     justify-content: center;
                         .regiones{
-                            width: 600px;
+                            width: 370px;
                             margin-bottom: 20px;
                             border-radius: 10px;
                                 }
@@ -407,6 +408,7 @@ section{
                 border: 1px solid #f4f4f4;
                 border-radius: 1em;
                 ul{
+                    //Tomara valores de fuente, hover, etc, de la siguiente ul//
                     li{
                 label{
                     display: inline-block;

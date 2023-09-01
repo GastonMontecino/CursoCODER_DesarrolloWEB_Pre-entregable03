@@ -68,7 +68,7 @@
     text-decoration: none;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
-    margin: 5px;
+    margin: 4px;
     border: solid 1.5px #30bef2;
     border-radius: 4px;
     padding: 5px;
@@ -172,6 +172,7 @@
     justify-content: center;
   }
   body .section-derivaciones .container-regiones .regiones {
+    width: 750px;
     margin-bottom: 20px;
     border-radius: 10px;
   }
@@ -379,7 +380,7 @@
     justify-content: center;
   }
   body .section-derivaciones .container-regiones .regiones {
-    width: 600px;
+    width: 370px;
     margin-bottom: 20px;
     border-radius: 10px;
   }
